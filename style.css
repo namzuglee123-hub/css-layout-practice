@@ -69,6 +69,16 @@ body {
   position: relative;
 }
 
+.card.selected {
+  background: var(--dark);
+  color: white;
+}
+
+.card.selected .badge {
+  background: white;
+  color: var(--dark);
+}
+
 .footer {
   grid-area: footer;
   background: var(--dark);
