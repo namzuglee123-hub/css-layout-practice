@@ -14,13 +14,9 @@ body {
 
 .page {
   display: grid;
-  /* grid-template-columns: 220px 1fr; */
   grid-template-columns: 1fr 220px;
   grid-template-rows: auto 1fr auto;
-  /* grid-template-areas:
-    "header  header"
-    "sidebar content"
-    "footer  footer"; */
+
   grid-template-areas:
     "header  header"
     "content sidebar"
@@ -52,6 +48,9 @@ body {
   grid-area: sidebar;
   background: #e5e7eb;
   padding: 24px;
+  position: sticky;
+  top: 0;
+  align-self: start;
 }
 
 .content {
@@ -87,6 +86,7 @@ body {
       "footer";
   }
 }
+
 .menu a:hover {
   text-decoration: underline;
 }
