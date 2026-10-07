@@ -10,11 +10,16 @@ body {
 
 .page {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  /* grid-template-columns: 220px 1fr; */
+  grid-template-columns: 1fr 220px;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas:
+  /* grid-template-areas:
     "header  header"
     "sidebar content"
+    "footer  footer"; */
+  grid-template-areas:
+    "header  header"
+    "content sidebar"
     "footer  footer";
   min-height: 100vh;
 }
