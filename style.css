@@ -83,3 +83,6 @@ body {
       "footer";
   }
 }
+.menu a:hover {
+  text-decoration: underline;
+}
